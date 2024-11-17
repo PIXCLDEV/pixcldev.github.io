@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXCL STUDIO</title>
+    <link rel="stylesheet" href="source/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://kit.fontawesome.com/51335961cf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Particle Container -->
+    <div id="particles-js"></div>
+    <div id="particles-js2"></div>
+
+    <!-- Animated Background -->
+    <!--<div class="background-animation">
+        <img src="assets/sa2d/screen1.png" class="animated-bg" alt="Project 1">
+        <img src="assets/sa2d/screen2.png" class="animated-bg" alt="Project 2">
+        <img src="assets/sa2d/screen3.png" class="animated-bg" alt="Project 3">
+    </div>-->
+
+    <div class="falling-images"></div>
+
+    <header>
+        <img class="logo" src="assets/studio_logo_text.png">
+        <!--<h1>PIXCL STUDIO</h1>-->
+        <nav class="social-icons">
+            <a href="mailto:your-email@example.com" class="icon"><i class="fa fa-envelope"></i></a>
+            <a href="https://bsky.app/profile/pixclstudio.bsky.social" target="_blank" class="icon"><i class="fa-brands fa-bluesky"></i></a>
+            <a href="https://x.com/pixclstudio" target="_blank" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
+        </nav>
+
+        <div id="typewriter"></div>
+    </header>
+
+    
+
+    <script>
+        document.querySelectorAll('.icon').forEach((button) => {
+            button.addEventListener('click', (e) => {
+                const ripple = document.createElement('span');
+                ripple.classList.add('ripple');
+                button.appendChild(ripple);
+
+                setTimeout(() => {
+                    ripple.remove();
+                }, 600);
+            });
+        });
+    </script>
+
+
+    <!--<section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Game Title</h3>
+            <img src="assets/game-screenshot.jpg" alt="Screenshot of Game">
+            <video controls src="assets/game-video.mp4"></video>
+            <p>A brief description of the game.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a freelance Unity developer with a passion for creating immersive games...</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Name</p>
+    </footer>-->
+
+
+    <script>
+        // Initialize Particles.js
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 100,
+                    density: {
+                        enable: true,
+                        value_area: 800,
+                    },
+                },
+                color: { value: "#fff" },
+                shape: {
+                    type: "circle",
+                    stroke: { width: 0, color: "#fff" },
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: { enable: false },
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: { enable: false },
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#fff",
+                    opacity: 0.8,
+                    width: 10,
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                },
+            },
+            //interactivity: {
+            //    detect_on: "canvas",
+            //    events: {
+            //        onhover: { enable: true, mode: "repulse" },
+            //        onclick: { enable: true, mode: "push" },
+            //        resize: true,
+            //    },
+            //    modes: {
+            //        repulse: { distance: 100, duration: 0.4 },
+            //        push: { particles_nb: 4 },
+            //    },
+            //},
+            retina_detect: true,
+        });
+
+    </script>
+    <script>
+        // Initialize Particles.js
+        particlesJS('particles-js2', {
+            particles: {
+                number: {
+                    value: 100,
+                    density: {
+                        enable: true,
+                        value_area: 800,
+                    },
+                },
+                color: { value: "#fff" },
+                shape: {
+                    type: "circle",
+                    stroke: { width: 0, color: "#fff" },
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: { enable: false },
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: { enable: false },
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#fff",
+                    opacity: 0.8,
+                    width: 10,
+                },
+                move: {
+                    enable: true,
+                    speed: 2,
+                    direction: "none",
+                    random: false,
+                    straight: false,
+                    out_mode: "out",
+                    bounce: false,
+                },
+            },
+            //interactivity: {
+            //    detect_on: "canvas",
+            //    events: {
+            //        onhover: { enable: true, mode: "repulse" },
+            //        onclick: { enable: true, mode: "push" },
+            //        resize: true,
+            //    },
+            //    modes: {
+            //        repulse: { distance: 100, duration: 0.4 },
+            //        push: { particles_nb: 4 },
+            //    },
+            //},
+            retina_detect: true,
+        });
+
+    </script>
+
+    <script src="source/js/typewriter.js"></script>
+</body>
+</html>
