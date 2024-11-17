@@ -83,14 +83,14 @@ footer {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.1);
     color: #000;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 28px;
     transition: all 0.2s ease-in-out;
 }
 
 /* Hover Effect */
 .icon:hover {
     box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.4), inset -4px -4px 10px rgba(255, 255, 255, 0.1);
-    transform: scale(1.1);
+    transform: scale(0.98);
 }
 
 /* Icon Styling */
@@ -136,13 +136,14 @@ footer {
 
 /* Typewriter Text and Cursor */
 #typewriter {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Fira Code', Courier, monospace;
     font-size: 2.5rem;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
     margin-top: 40px;
     border-right: 2px solid currentColor; /* Fallback cursor */
+    font-weight: bold;
 }
 
 /* Blinking Animation for Cursor */
