@@ -1,0 +1,159 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\data\\game_development\\github\\pixcldev.github.io\\source\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\data\\game_development\\github\\pixcldev.github.io\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\data\\game_development\\github\\pixcldev.github.io\\source\\css\\animation\\scroll_animation.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\animation\\scroll_animation.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\typewriter.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\typewriter.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\pixel_particles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\pixel_particles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\particles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\particles.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\button_effects.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\button_effects.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\screenshot_rain.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:js\\screenshot_rain.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "button_effects.js",
+              "DocumentMoniker": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\button_effects.js",
+              "RelativeDocumentMoniker": "js\\button_effects.js",
+              "ToolTip": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\button_effects.js",
+              "RelativeToolTip": "js\\button_effects.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-18T23:51:37.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "scroll_animation.css",
+              "DocumentMoniker": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\css\\animation\\scroll_animation.css",
+              "RelativeDocumentMoniker": "css\\animation\\scroll_animation.css",
+              "ToolTip": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\css\\animation\\scroll_animation.css",
+              "RelativeToolTip": "css\\animation\\scroll_animation.css",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-18T23:50:57.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "pixel_particles.js",
+              "DocumentMoniker": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\pixel_particles.js",
+              "RelativeDocumentMoniker": "js\\pixel_particles.js",
+              "ToolTip": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\pixel_particles.js",
+              "RelativeToolTip": "js\\pixel_particles.js",
+              "ViewState": "AQIAADQAAAAAAAAAAAAQwEgAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-18T21:33:28.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\css\\style.css",
+              "RelativeDocumentMoniker": "css\\style.css",
+              "ToolTip": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\css\\style.css",
+              "RelativeToolTip": "css\\style.css",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAFcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-18T20:24:38.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "typewriter.js",
+              "DocumentMoniker": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\typewriter.js",
+              "RelativeDocumentMoniker": "js\\typewriter.js",
+              "ToolTip": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\typewriter.js",
+              "RelativeToolTip": "js\\typewriter.js",
+              "ViewState": "AQIAACQAAAAAAAAAAAAQwCwAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-18T20:21:44.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "screenshot_rain.js",
+              "DocumentMoniker": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\screenshot_rain.js",
+              "RelativeDocumentMoniker": "js\\screenshot_rain.js",
+              "ToolTip": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\screenshot_rain.js",
+              "RelativeToolTip": "js\\screenshot_rain.js",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-18T20:21:34.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "particles.js",
+              "DocumentMoniker": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\particles.js",
+              "RelativeDocumentMoniker": "js\\particles.js",
+              "ToolTip": "D:\\data\\game_development\\github\\pixcldev.github.io\\source\\js\\particles.js",
+              "RelativeToolTip": "js\\particles.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-18T20:20:58.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\data\\game_development\\github\\pixcldev.github.io\\index.html",
+              "RelativeDocumentMoniker": "..\\index.html",
+              "ToolTip": "D:\\data\\game_development\\github\\pixcldev.github.io\\index.html",
+              "RelativeToolTip": "..\\index.html",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAGAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-11-18T20:20:40.068Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

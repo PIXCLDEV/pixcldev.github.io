@@ -38,9 +38,33 @@ function typewriterEffect(element, text, speed = 100) {
     type();
 }
 
-// Call the function in the external script
 window.addEventListener("DOMContentLoaded", () => {
     const typewriterElement = document.getElementById('typewriter');
-    const text = "Hey there! I'm PIXCLDEV, how can I help you?";
+    const text = "Hey there! I'm PIXCLDEV.";
     typewriterEffect(typewriterElement, text, 70);
 });
+
+
+// Define the function to be called when the element enters the viewport
+function onElementEnter(entry) {
+    const typewriterElement = document.getElementById('typewriter2');
+    const text = "My Unity Expertise.";
+    typewriterEffect(typewriterElement, text, 70);
+    // Stop observing the element after it's triggered the first time
+    observer.unobserve(entry.target);
+}
+
+// Create an Intersection Observer
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            onElementEnter(entry);
+        }
+    });
+});
+
+// Select the target element
+const target = document.getElementById("typewriter2");
+
+// Start observing the target element
+observer.observe(target);

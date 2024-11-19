@@ -1,21 +1,22 @@
 body {
-    font-family: Arial, sans-serif;
     background-color: #f3e500;
-    color: #333;
-    width: 100%;
-    height: 100%;
     margin: 0 auto;
-    overflow: hidden;
-    /*padding: 20px;*/
+    padding: 0;
+    overflow: hidden auto;
+    height: 200vh;
 }
 
+.landingpage {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+}
 /* Basic Styles */
-/** {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}*/
+}
 
 /*html, body {
     width: 100%;
@@ -32,23 +33,33 @@ body {
 
 header {
     text-align: center;
-}
 
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #007bff;
+    width: 50vw;
+    margin: 0 auto;
 }
 
 section {
-    margin: 20px 0;
+    font-family: 'Fira Code', Courier, monospace;
+    font-size: 1.25vw;
+    text-align: left;
+    width: 50vw;
+    margin: 0 auto;
 }
 
-.project img, .project video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px 0;
+.text-section {
+    padding-left: 20px;
+    border-left: 10px solid currentColor; /* Fallback cursor */
+}
+
+/* Typewriter Text and Cursor */
+.section-header {
+    font-family: 'Fira Code', Courier, monospace;
+    font-size: 2.5vw;
+    display: inline-block;
+    overflow: auto;
+    /*padding-left: 10px;*/
+    /*border-left: 20px solid currentColor;*/ /* Fallback cursor */
+    font-weight: bold;
 }
 
 footer {
@@ -56,28 +67,51 @@ footer {
     margin-top: 20px;
 }
 
-.logo {
-    width: 500px;
+.logo-layout {
+    max-width: 50vh;
     height: auto;
-    display: block;
+    display: flex;
     margin: 0 auto;
+
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+    margin: 0 auto;
+}
+
+.construction {
+    position: relative;
+    top: 140px;
+    margin: 0 auto;
+    width: 0px;
+    
+    z-index: 1000;
+
+    transition: opacity 0.5s;
+    font-size: 5vw;
 }
 
 /* General Styles */
 
 .social-icons {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: center;
     margin-top: -30px;
+    flex-shrink: 0;
+    margin-bottom: 40px;
 }
 
 .icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 70px;
+    min-width: 70px;
+    min-height: 70px;
     border-radius: 50%;
     background-color: #f39c12;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.1);
@@ -98,8 +132,6 @@ footer {
     pointer-events: none;
 }
 
-
-
 .ripple {
     position: absolute;
     width: 100px;
@@ -117,6 +149,15 @@ footer {
     }
 }
 
+#particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: 100%;
+    pointer-events: none; /* Ensures the canvas doesn't block other elements */
+    z-index: -1;
+}
 
 /* Particle Background */
 #particles-js {
@@ -134,24 +175,12 @@ footer {
     z-index: -1;
 }
 
-/* Typewriter Text and Cursor */
-#typewriter {
-    font-family: 'Fira Code', Courier, monospace;
-    font-size: 2.5rem;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-top: 40px;
-    border-right: 2px solid currentColor; /* Fallback cursor */
-    font-weight: bold;
-}
-
 /* Blinking Animation for Cursor */
-@keyframes blink {
+/*@keyframes blink {
     0%, 50% {
         border-color: currentColor;
     }
     51%, 100% {
         border-color: transparent;
     }
-}
+}*/
