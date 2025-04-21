@@ -1,0 +1,25 @@
+.site-footer {
+    position: relative;
+    background: black;
+    color: yellow;
+    margin: 0 auto;
+    padding: 0;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    /*    padding: 2rem 0.5rem;*/
+    text-align: center;
+    font-family: 'Fira Code', Courier, monospace;
+    /*background: linear-gradient(to bottom, #f3e500 1%, #000000 );*/
+    /*background: radial-gradient(circle at center, #000000 0%, #ffdf00 100%);*/
+    height: 90px;
+}
+
+.footer-gif {
+    position: absolute;
+    bottom: 90px;
+    left: 0px;
+    width: 130px;
+    height: auto;
+    filter: brightness(0);
+    object-fit: contain; /* Ensures it fits nicely */
+}

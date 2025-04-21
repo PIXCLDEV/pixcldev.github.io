@@ -1,0 +1,9 @@
+.construction {
+    position: relative;
+    top: 140px;
+    margin: 0 auto;
+    width: 0px;
+    z-index: 1000;
+    transition: opacity 0.5s;
+    font-size: 5vw;
+}

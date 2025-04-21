@@ -1,0 +1,71 @@
+
+.button {
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Fira Code', Courier, monospace;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.header-button {
+    min-height: 2vh;
+    min-width: 2vh;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2d2d;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 7px 14px;
+    color: white;
+}
+
+.header-button:hover {
+    background-color: #1d1d1d;
+    transform: translateY(-2px);
+}
+
+.header-buttons {
+    height: 100%;
+    margin-left: auto;
+    margin-right: 50px;
+    
+}
+
+.header-logo {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.header-bar {
+    display: flex;
+    background-color: #444444;
+    height: 50px;
+    width: 100vw;
+    padding-left: 10px;
+    box-shadow: -5px 3px 5px;
+    position: fixed;
+    z-index: 3;
+    gap: 1rem;
+}
+
+
+
+@media (max-width: 700px) {
+    .header-button {
+        display: none;
+    }
+}

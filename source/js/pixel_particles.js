@@ -8,8 +8,8 @@ canvas.height = window.innerHeight;
 
 // Particle settings
 const particlesArray = [];
-const numberOfParticles = 20;
-const particleColor = "#a8a8a8"; // Light gray for neumorphism style
+const numberOfParticles = 6;
+const particleColor = "#a8a8a8";
 
 // Helper function to generate a random number
 function random(min, max) {

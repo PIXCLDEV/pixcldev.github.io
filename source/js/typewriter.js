@@ -1,70 +1,52 @@
-//function typewriterEffect(element, text, speed = 100) {
-//    let index = 0;
-
-//    // Set the blinking animation for the element itself
-//    element.style.animation = 'blink 1.3s steps(1) infinite';
-
-//    function type() {
-//        if (index < text.length) {
-//            element.textContent += text.charAt(index);
-//            index++;
-//            setTimeout(type, speed);
-//        }
-//    }
-
-//    type();
-//}
-
-function typewriterEffect(element, text, speed = 100) {
+function startTypewriter(element, text, speed = 100) {
     let index = 0;
 
-    // Set the blinking animation for the element itself
-    element.style.animation = 'blink 1.3s steps(1) infinite';
-
-    // Parse the HTML content
     const tempDiv = document.createElement("div");
     tempDiv.innerHTML = text;
     const textArray = Array.from(tempDiv.childNodes);
 
-        function type() {
-            if (index < text.length) {
-                element.textContent += text.charAt(index);
+    function type() {
+        if (index < text.length) {
+            element.textContent += text.charAt(index);
 
-                index++;
-                setTimeout(type, speed);
-            }
+            index++;
+            setTimeout(type, speed);
         }
+    }
 
     type();
 }
 
 window.addEventListener("DOMContentLoaded", () => {
     const typewriterElement = document.getElementById('typewriter');
-    const text = "Hey there! I'm PIXCLDEV.";
-    typewriterEffect(typewriterElement, text, 70);
+    const text = "Hi, I'm Elias Broschin.";
+    startTypewriter(typewriterElement, text, 70);
 });
 
-
-// Define the function to be called when the element enters the viewport
-function onElementEnter(entry) {
-    const typewriterElement = document.getElementById('typewriter2');
-    const text = "My Unity Expertise.";
-    typewriterEffect(typewriterElement, text, 70);
-    // Stop observing the element after it's triggered the first time
-    observer.unobserve(entry.target);
+function onElementEnter(entry, text, observerInstance) {
+    const typewriterElement = entry.target;
+    startTypewriter(typewriterElement, text, 70);
+    observerInstance.unobserve(entry.target);
 }
 
-// Create an Intersection Observer
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            onElementEnter(entry);
-        }
+function createTypewriterObserver(elementId, labelText) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                onElementEnter(entry, labelText, observer);
+            }
+        });
     });
-});
 
-// Select the target element
-const target = document.getElementById("typewriter2");
+    const target = document.getElementById(elementId);
+    if (!target) return;
 
-// Start observing the target element
-observer.observe(target);
+    observer.observe(target);
+}
+
+
+createTypewriterObserver("typewriter2", "My Indie Games.");
+createTypewriterObserver("typewriter3", "Professional Experience.");
+createTypewriterObserver("typewriter4", "My Services.");
+createTypewriterObserver("typewriter5", "About Me.");
+createTypewriterObserver("typewriter6", "Contact Me.");

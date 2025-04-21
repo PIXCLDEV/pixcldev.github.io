@@ -1,0 +1,30 @@
+.ambient-gif-container {
+    position: absolute;
+    width: 100%;
+    height: 580px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.ambient-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    filter: grayscale(100%) opacity(0.2);
+    transition: opacity 1s ease-in-out;
+    pointer-events: none;
+}
+
+    .ambient-gif.active {
+        opacity: 1;
+    }
+
+@media (max-width: 600px) {
+    .ambient-gif-container {
+        display: none;
+    }
+}
