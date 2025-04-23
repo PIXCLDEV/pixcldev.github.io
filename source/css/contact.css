@@ -31,11 +31,56 @@
 
 .contact-button {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     gap: 0.5rem;
     padding: 10px 14px;
     margin-top: 3px;
-    min-width: 250px;
+    max-width: 250px;
     padding-left: 10px;
+}
+
+.inline-button {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f39c12;
+    color: #000;
+    text-decoration: none;
+    font-size: 28px;
+    transition: all 0.07s ease-in-out;
+}
+
+/* Hover Effect */
+.contact-icon:hover {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.1);
+    transform: scale(0.98);
+}
+
+/* Icon Styling */
+.contact-icon i {
+    pointer-events: none;
+    color: #000;
+}
+
+.process-list li {
+    margin-bottom: 0.5rem;
 }

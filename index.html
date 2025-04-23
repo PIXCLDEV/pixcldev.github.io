@@ -31,11 +31,11 @@
     <canvas id="particles"></canvas>
     <div class="header-bar">
         <img class="header-logo" onclick="scrollToTop()" src="assets/studio_logo_small.png">
+        <a href="javascript:void(0)" onclick="scrollToSection('about')" class="button header-button">About Me</a>
         <a href="javascript:void(0)" onclick="scrollToSection('portfolio')" class="button header-button">Portfolio</a>
+        <a href="javascript:void(0)" onclick="scrollToSection('services')" class="button header-button">Services</a>
         <a href="javascript:void(0)" onclick="scrollToSection('experience')" class="button header-button">Experience</a>
         <!--<a href="mailto:pixclstudio@gmail.com" class="button header-button">Skills</a>-->
-        <a href="javascript:void(0)" onclick="scrollToSection('services')" class="button header-button">Services</a>
-        <a href="javascript:void(0)" onclick="scrollToSection('about')" class="button header-button">About Me</a>
         <!--<a href="https://cl-games.itch.io/" target="_blank" class="header-icon"><i class="fa-solid fa-bars"></i></a>-->
         <div class="header-buttons">
 
@@ -50,10 +50,10 @@
                 <img class="logo" src="assets/studio_logo_text.png">
             </div>
             <nav class="social-icons">
-                <a href="https://cl-games.itch.io/" target="_blank" class="icon"><i class="fa-brands fa-itch-io"></i></a>
+                <a href="https://pixcl-studio.itch.io/" target="_blank" class="icon"><i class="fa-brands fa-itch-io"></i></a>
                 <a href="https://bsky.app/profile/pixclstudio.bsky.social" target="_blank" class="icon"><i class="fa-brands fa-bluesky"></i></a>
                 <a href="https://x.com/pixclstudio" target="_blank" class="icon"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="mailto:your-email@example.com" class="icon"><i class="fa fa-envelope"></i></a>
+                <a href="mailto:pixclstudio@gmail.com" class="icon"><i class="fa fa-envelope"></i></a>
             </nav>
         </header>
 
@@ -61,7 +61,6 @@
             <div id="typewriter" class="section-header"></div><br />
             <b>Freelance Unity Game Developer & C# Specialist</b><br />
             2D/3D | PC, Mobile, WebGL | Tools & Prototypes | Refactoring
-
         </section>
         <br /><br />
         <section class="text-section">
@@ -71,9 +70,42 @@
             <a href="javascript:void(0)" onclick="scrollToBottom()" class="button">Let's Talk</a>
         </section>
         <div id="scroll-indicator">
-            <span onclick="scrollToSection('portfolio')" class="arrow-down"><i class="fa-solid fa-circle-down"></i></span>
+            <span onclick="scrollToSection('about')" class="arrow-down"><i class="fa-solid fa-circle-down"></i></span>
         </div>
     </div><br />
+
+    <section class="text-section" id="about">
+        <div id="typewriter5" class="section-header"></div><br />
+        <b>☕ Games are my life-long passion.</b>
+    </section>
+    <section class="projects-section">
+        <div class="about-content">
+            <img src="assets/personal/profile.png" alt="Photo of the freelancer you definitely want to hire" class="about-photo" />
+
+            <p>
+                <b>Name:</b> Elias Broschin<br />
+                <b>Location:</b> Germany (UTC+2)<br />
+                <b>Languages:</b> English, German<br /><br />
+
+                <b>Availability:</b><br /> 🟢 Part-Time 20h/week | Full-Time starting july <br />
+            </p>
+
+            <p>
+                Hey there! I'm a Unity developer with a passion for creating game systems, while ensuring that our project stays:
+            </p>
+            <ul>
+                <li>well-structured</li>
+                <li>functional</li>
+                <li>documented</li>
+                <li>bug-proof</li>
+            </ul><br />
+
+            <p>
+                With 7+ experience as a programmer, 3+ years experience as professional Unity developer in the games industry and solo developer:
+                <b>I am here to make your game project a success.</b>
+            </p>
+        </div>
+    </section><br /><br /><br /><br /><br />
 
     <section class="text-section" id="portfolio">
         <div id="typewriter2" class="section-header"></div><br />
@@ -83,49 +115,6 @@
     <div id="projects-container" class="projects-section">
     </div>
 
-    <section class="text-section" id="experience">
-        <div id="typewriter3" class="section-header"></div><br />
-        <b>💼 My contributions as a Senior Unity developer working on commercial games.</b>
-    </section>
-
-    <section class="projects-section">
-        <div class="responsibility-block">
-            <h3>Gameplay Programming</h3>
-            <ul>
-                <li>Designed and implemented large-scale features for live games with millions of players.</li>
-                <li>Improved existing and developed new gameplay systems.</li>
-                <li>Scripted enemy behaviors and player interactions using event-driven systems</li>
-            </ul>
-        </div>
-
-        <div class="responsibility-block">
-            <h3>Clean Code Architecture</h3>
-            <ul>
-                <li>Applied my experience with legacy code to handle large, grown code-bases.</li>
-                <li>Constantly seeking to improve the architecture </li>
-                <li>Implemented multi-resolution support for WebGL and mobile screens</li>
-            </ul>
-        </div>
-
-        <div class="responsibility-block">
-            <h3>Performance & Platform Optimization</h3>
-            <ul>
-                <li>Optimized WebGL builds by reducing memory usage and draw calls</li>
-                <li>Improved load times and asset management across scenes</li>
-                <li>Diagnosed and resolved platform-specific issues for mobile and WebGL deployment</li>
-            </ul>
-        </div>
-
-        <div class="responsibility-block">
-            <h3>Tools & Internal Systems</h3>
-            <ul>
-                <li>Built custom Unity editor tools to streamline level design and testing</li>
-                <li>Maintained clean, modular codebases using SOLID principles</li>
-                <li>Refactored legacy systems to improve maintainability and scalability</li>
-            </ul>
-        </div>
-    </section>
-    <br /><br /><br />
     <section class="text-section" id="services">
         <div id="typewriter4" class="section-header"></div><br />
         <b>🚀 Here's how I can bring your Unity project to the next level.</b>
@@ -184,7 +173,7 @@
             <div class="service-card">
                 <h3>💬 Consultation</h3>
                 <p>
-                    Need direction or advice? I offer technical consultation on Unity architecture, development workflows, and feature planning.
+                    Games are complex, I can help you navigate that landscape. Wether you are coming from a technical background or just learning more about the game development process, I will advise you professionally.
                 </p>
             </div>
 
@@ -192,30 +181,55 @@
         Limited Time Rate: 25$/hour
     </section>
 
-    <section class="text-section" id="about">
-        <div id="typewriter5" class="section-header"></div><br />
-        <b>🚀 Games are my life-long passion.</b>
-    </section>
-    <section class="projects-section">
-        <!--<div class="about-content-wrapped">-->
-        <!--<img src="assets/studio_logo_text.png" alt="Photo of me" class="about-photo" />-->
-
-        <p>
-            I'm a freelance Unity developer based in Germany with 3+ years of professional experience in the game industry, including 1 year as a senior developer. I’ve worked on commercial browser and mobile games for a German freemium studio, and in my own time, I’ve built and released two complete indie games.
-        </p>
-
-        <p>
-            My specialty is clean, modular C# code. I enjoy architecting gameplay systems, refactoring legacy projects, and building in-editor tools that save teams time. I’m comfortable across 2D and 3D, but especially love working on gameplay feel, UI polish, and rapid prototyping.
-        </p>
-
-        <p>
-            I’m fluent in English and German, available full-time starting July 2025, and currently looking to collaborate with studios, startups, or solo devs who need solid Unity development—from prototypes to final polish.
-        </p>
-        <!--</div>-->
-    </section>
     <br /> <br /><br />
 
+    <section class="text-section" id="experience">
+        <div id="typewriter3" class="section-header"></div><br />
+        <b>💼 My contributions as a Senior Unity Developer working in the games industry.</b>
+    </section>
 
+    <section class="projects-section">
+        <div class="responsibility-block">
+            During my 3+ years of employment in the games industry, I was responsible to maintain multiple live game titles (WebGL, Android, Steam) made in Unity with thousands of active players.
+            <br /><br />
+            I worked on casual free-to-play games including farm games, zoo management games, deckbuilding games and gamified environmental simulations.<br />
+        </div>
+
+        <div class="responsibility-block">
+            <h3>Gameplay Programming</h3>
+            <ul>
+                <li>Developed new features and mechanics for casual games with focus on content extendability</li>
+                <li>Contributed as leading senior developer for new game projects to ensure clean code architecture and performant systems</li>
+                <li>Integrated API calls and WebSocket communication for a smooth multiplayer experience</li>
+                <li>Upgraded game visuals with custom shaders, post-processing and render features</li>
+            </ul>
+        </div>
+        <div class="responsibility-block">
+            <h3>Maintenance & Code Quality</h3>
+            <ul>
+                <li>Applied my experience with legacy code to handle large code-bases with years of history</li>
+                <li>Refactored entire systems in code, scene setup and prefab structure</li>
+                <li>Took care of incoming bug tickets by efficiently applying debugging and profiler tools</li>
+            </ul>
+        </div>
+        <div class="responsibility-block">
+            <h3>Performance & Platform Optimization</h3>
+            <ul>
+                <li>Optimized WebGL builds by reducing memory usage, draw calls and garbage collection</li>
+                <li>Optimized runtime performance for games with large, extendable game grids</li>
+                <li>Improved load times and asset management by implementing Unity addressables</li>
+            </ul>
+        </div>
+        <div class="responsibility-block">
+            <h3>Tools, Deployment & Patches</h3>
+            <ul>
+                <li>Built Unity Editor Tools to optimize workflows for developers, game designers and artists</li>
+                <li>Coordinated weekly content patches for WebGL and Steam platforms</li>
+                <li>Maintained CDN servers, git repositories and Gitlab CI/CD pipelines</li>
+            </ul>
+        </div>
+    </section>
+    <br /><br /><br />
 
     <section class="text-section" id="contact">
         <div id="typewriter6" class="section-header"></div><br />
@@ -224,64 +238,33 @@
 
     <section class="projects-section">
         <p>
-            I'm available for freelance Unity development. Whether you're a studio, solo dev, or small team—I'd love to hear what you're building.
+            Whether you're a game studio, small indie team or fellow solo developer:<br />
+            I'd love to hear about your game project!
         </p>
-
-        <div class="contact-process">
-            <h3>How It Works</h3>
-            <ol>
-                <li>Send me a message with a short description of your project.</li>
-                <li>We schedule a call (Discord/email) to talk about your goals and needs.</li>
-                <li>I give you a time estimate and we agree on a rate.</li>
-                <li>I get to work—and keep you updated along the way.</li>
-            </ol>
-        </div>
-
-        <div class="contact-methods">
-            <p><strong>Email:</strong> <a href="mailto:your@email.com">your@email.com</a></p>
-            <p><strong>Discord:</strong> yourDiscord#0000</p>
-            <!-- Or add a contact form here -->
-        </div>
+        <h3>Here's how it works</h3>
+        <ol class="process-list">
+            <li>Send me an E-Mail with a short description of your project.<a href="mailto:pixclstudio@gmail.com" class="button contact-button inline-button"><i class="fa fa-envelope"></i>pixclstudio@gmail.com</a></li>
+            <li>We schedule a call (Discord/Zoom) to talk about your goals and needs.</li>
+            <li>I will provide a time estimate and we agree on an hourly rate or fixed price.</li>
+            <li>I get to work and keep you regularly updated on the progress.</li>
+        </ol>
     </section>
 
-
-    <!--<div class="projects-section">
-        <ul class="contact-list">
-            <li><strong>🔸 Email:</strong> <a href="mailto:pixclstudio@gmail.com">pixclstudio@gmail.com</a></li>
-            <li><strong>🔸 Discord: </strong>pixclstudio_29151#1234</li>
-            <li><strong>🔸 LinkedIn:</strong> <a href="https://www.linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
-            <li><strong>🔸 XING:</strong> <a href="https://www.xing.com/profile/yourprofile" target="_blank">xing.com/profile/yourprofile</a></li>
-            <li><strong>🔸 GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
-            <li><strong>🔸 Location:</strong> City, Country (or Remote)</li>
-            <li><strong>🔸 Available for work:</strong> Yes ✅</li>
-        </ul>
-    </div>-->
-    <!--<div class="about-tags">
-        <span class="tag">Unity (2D/3D)</span>
-        <span class="tag">C#</span>
-        <span class="tag">Gameplay Programming</span>
-        <span class="tag">Editor Tools</span>
-        <span class="tag">Clean Code</span>
-        <span class="tag">WebGL</span>
-        <span class="tag">Prototyping</span>
-        <span class="tag">UI/UX</span>
-    </div>-->
-
-
+    <br /><br />
+    <nav class="contact-icons">
+        <a href="https://cl-games.itch.io/" target="_blank" class="contact-icon"><i class="fa-brands fa-itch-io"></i></a>
+        <a href="https://bsky.app/profile/pixclstudio.bsky.social" target="_blank" class="contact-icon"><i class="fa-brands fa-bluesky"></i></a>
+        <a href="https://x.com/pixclstudio" target="_blank" class="contact-icon"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="mailto:pixclstudio@gmail.com" class="contact-icon"><i class="fa fa-envelope"></i></a>
+    </nav>
 
     <footer class="site-footer" id="bottom">
 
         <div class="footer-content">
             <img src="assets/spark.gif" class="footer-gif" />
             <p>&copy; 2025 Elias Broschin — Freelance Unity Developer<br /><br />Website created by Elias Broschin</p>
-
         </div>
     </footer>
-
-
-    <!--<div class="construction">
-        <i class="fa-solid fa-person-digging"></i>
-    </div>-->
 
     <script src="source/js/typewriter.js"></script>
     <script src="source/js/button_effects.js"></script>
