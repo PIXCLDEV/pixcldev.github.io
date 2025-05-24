@@ -16,7 +16,7 @@ const projects = [
             "assets/tdw/tdw4.png",
             "assets/tdw/tdw5.png"
         ],
-        contributions: [
+        highlights: [
             "Crisp pixel art, fonts and camera control",
             "Custom-made tools for dialogues and cutscenes",
             "Custom-made sprite shaders and VFX",
@@ -25,16 +25,21 @@ const projects = [
     },
     {
         title: "Spark's Adventure 3D",
-        description: "My first published game title reimagined as a 3D collectathon platformer inspired by PSX classics.",
+        description: "My first self-published game title reimagined as a 3D collectathon platformer inspired by PSX classics.",
         image: "assets/sa3d/cover.png",
         videoId: "EmcdGMkryRQ",
         status: "🛠️ Playable Prototype (2025)",
         link: "https://pixcl-studio.itch.io/sparks-adventure-3d",
         screenshots: [
-            "assets/tdw/logo.png",
-            "assets/tdw/logo.png"
+            "assets/sa3d/sa3d0.gif",
+            "assets/sa3d/sa3d1.png",
+            "assets/sa3d/sa3d2.png",
+            "assets/sa3d/sa3d3.gif",
+            "assets/sa3d/sa3d4.png",
+            "assets/sa3d/sa3d5.gif",
+            "assets/sa3d/sa3d6.png"
         ],
-        contributions: [
+        highlights: [
             "100% solo-dev including asset and tool creation",
             "Custom-made character controller (collide-and-slide)",
             "Custom-made level design, terrain and camera tools",
@@ -43,20 +48,24 @@ const projects = [
     },
     {
         title: "Spark's Adventure",
-        description: "A short 2D exploration game with custom movement, atmosphere, and shaders. Built in Unity and published on itch.io.",
+        description: "A 2D bullet hell exploration game with light souls-like mechanics. My first self-published game title.",
         image: "assets/sa2d/salogo.png",
-        status: "🎮 Full Game Release (2021)",
+        status: "🎮 Full Game (2021)",
         videoId: "-5pFz708OCw",
         link: "https://pixcl-studio.itch.io/sparks-adventure",
         screenshots: [
-            "assets/tdw/logo.png",
-            "assets/tdw/logo.png"
+            "assets/sa2d/sa2d0.png",
+            "assets/sa2d/sa2d1.png",
+            "assets/sa2d/sa2d2.png",
+            "assets/sa2d/sa2d3.png",
+            "assets/sa2d/sa2d4.png",
+            "assets/sa2d/sa2d5.png"
         ],
-        contributions: [
-            "Custom Character Controller (Collide-and-Slide)",
-            "Vegetation Compute Shader, URP Render Features",
-            "Custom Level Design Tools",
-            "Camera Cart System"
+        highlights: [
+            "Available for WebGL and PC",
+            "Sequence system for boss fight patterns",
+            "Bullet pattern systems for enemies and weapon-types",
+            "Elemental interaction and weakness system"
         ]
     }
 ];
@@ -102,7 +111,7 @@ function toggleVideo(button) {
 }
 
 function generateProjectHTML(project) {
-    const contributions = project.contributions
+    const highlights = project.highlights
         .map(item => `<b><li>🔸 ${item}</li></b>`)
         .join("");
 
@@ -117,7 +126,7 @@ function generateProjectHTML(project) {
           <h3>${project.title}</h3>
           <span class="project-status">${project.status}</span>
           <p class="project-description">${project.description}</p>
-          <ul class="project-details">${contributions}</ul>
+          <ul class="project-details">${highlights}</ul>
           <a href="${project.link}" class="project-button" target="_blank"><i class="fa-brands fa-itch-io"></i> Play on itch.io</a>
           <a href="javascript:void(0)" class="media-toggle" onclick="toggleVideo(this)"><i class="fa-solid fa-caret-right"></i> Show More</a>
 
