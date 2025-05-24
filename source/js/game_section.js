@@ -2,26 +2,56 @@
 const projects = [
     {
         title: "Tiny Dream World",
-        description: "A short 2D exploration game with custom movement, atmosphere, and shaders. Built in Unity and published on itch.io.",
+        description: "A tiny but tidy cozy game with randomized exploration and casual farming, fishing and animal rescue mechanics.",
         image: "assets/tdw/logo.png",
-        status: "🎮 Released",
+        status: "🎮 Full Game (2025)",
         videoId: "f-OY7djwrjc",
         link: "https://pixcl-studio.itch.io/tiny-dream-world",
+        screenshots: [
+            "assets/tdw/tdw0.gif",
+            "assets/tdw/tdw1.png",
+            "assets/tdw/tdw02.gif",
+            "assets/tdw/tdw2.png",
+            "assets/tdw/tdw3.png",
+            "assets/tdw/tdw4.png",
+            "assets/tdw/tdw5.png"
+        ],
         contributions: [
-            "Custom Character Controller (Collide-and-Slide)",
-            "Vegetation Compute Shader, URP Render Features",
-            "Custom Level Design Tools",
-            "Camera Cart System"
+            "Crisp pixel art, fonts and camera control",
+            "Custom-made tools for dialogues and cutscenes",
+            "Custom-made sprite shaders and VFX",
+            "Full asset integration (sound, music, spritesheets)"
         ]
     },
-
+    {
+        title: "Spark's Adventure 3D",
+        description: "My first published game title reimagined as a 3D collectathon platformer inspired by PSX classics.",
+        image: "assets/sa3d/cover.png",
+        videoId: "EmcdGMkryRQ",
+        status: "🛠️ Playable Prototype (2025)",
+        link: "https://pixcl-studio.itch.io/sparks-adventure-3d",
+        screenshots: [
+            "assets/tdw/logo.png",
+            "assets/tdw/logo.png"
+        ],
+        contributions: [
+            "100% solo-dev including asset and tool creation",
+            "Custom-made character controller (collide-and-slide)",
+            "Custom-made level design, terrain and camera tools",
+            "Custom-made PSX shaders and post-processing"
+        ]
+    },
     {
         title: "Spark's Adventure",
         description: "A short 2D exploration game with custom movement, atmosphere, and shaders. Built in Unity and published on itch.io.",
         image: "assets/sa2d/salogo.png",
-        status: "🎮 Released",
+        status: "🎮 Full Game Release (2021)",
         videoId: "-5pFz708OCw",
         link: "https://pixcl-studio.itch.io/sparks-adventure",
+        screenshots: [
+            "assets/tdw/logo.png",
+            "assets/tdw/logo.png"
+        ],
         contributions: [
             "Custom Character Controller (Collide-and-Slide)",
             "Vegetation Compute Shader, URP Render Features",
@@ -31,50 +61,36 @@ const projects = [
     }
 ];
 
-const prototypes = [
-    {
-        title: "Spark's Jump&Run",
-        description: "A short 2D exploration game with custom movement, atmosphere, and shaders. Built in Unity and published on itch.io.",
-        image: "voidspace-thumbnail.jpg",
-        videoId: "Vsxyo3vzTy4",
-        status: "🛠️ Prototype",
-        link: "https://pixcl-studio.itch.io/sparks-adventure",
-        contributions: [
-            "Custom Character Controller (Collide-and-Slide)",
-            "Vegetation Compute Shader, URP Render Features",
-            "Custom Level Design Tools",
-            "Camera Cart System"
-        ]
-    },
-    {
-        title: "Black Genesis",
-        description: "A short 2D exploration game with custom movement, atmosphere, and shaders. Built in Unity and published on itch.io.",
-        image: "voidspace-thumbnail.jpg",
-        videoId: "Vsxyo3vzTy4",
-        status: "🛠️ Prototype",
-        link: "https://pixcl-studio.itch.io/sparks-adventure",
-        contributions: [
-            "Custom Character Controller (Collide-and-Slide)",
-            "Vegetation Compute Shader, URP Render Features",
-            "Custom Level Design Tools",
-            "Camera Cart System"
-        ]
-    },
-    {
-        title: "Duskborne",
-        description: "A short 2D exploration game with custom movement, atmosphere, and shaders. Built in Unity and published on itch.io.",
-        image: "voidspace-thumbnail.jpg",
-        videoId: "Vsxyo3vzTy4",
-        status: "🛠️ Prototype",
-        link: "https://pixcl-studio.itch.io/sparks-adventure",
-        contributions: [
-            "Custom Character Controller (Collide-and-Slide)",
-            "Vegetation Compute Shader, URP Render Features",
-            "Custom Level Design Tools",
-            "Camera Cart System"
-        ]
-    }
-];
+//const prototypes = [
+//    {
+//        title: "Black Genesis",
+//        description: "A short 2D exploration game with custom movement, atmosphere, and shaders. Built in Unity and published on itch.io.",
+//        image: "voidspace-thumbnail.jpg",
+//        videoId: "Vsxyo3vzTy4",
+//        status: "🛠️ Prototype",
+//        link: "https://pixcl-studio.itch.io/sparks-adventure",
+//        contributions: [
+//            "Custom Character Controller (Collide-and-Slide)",
+//            "Vegetation Compute Shader, URP Render Features",
+//            "Custom Level Design Tools",
+//            "Camera Cart System"
+//        ]
+//    },
+//    {
+//        title: "Duskborne",
+//        description: "A short 2D exploration game with custom movement, atmosphere, and shaders. Built in Unity and published on itch.io.",
+//        image: "voidspace-thumbnail.jpg",
+//        videoId: "Vsxyo3vzTy4",
+//        status: "🛠️ Prototype",
+//        link: "https://pixcl-studio.itch.io/sparks-adventure"
+//        contributions: [
+//            "Custom Character Controller (Collide-and-Slide)",
+//            "Vegetation Compute Shader, URP Render Features",
+//            "Custom Level Design Tools",
+//            "Camera Cart System"
+//        ]
+//    }
+//];
 
 function toggleVideo(button) {
     const projectCard = button.closest('.project-card');
@@ -82,12 +98,16 @@ function toggleVideo(button) {
     const isOpen = videoSection.classList.contains('open');
 
     videoSection.classList.toggle('open');
-    button.textContent = isOpen ? '▶ Show More' : '▼ Show Less';
+    button.innerHTML = isOpen ? '<i class="fa-solid fa-caret-right"></i> Show More' : '<i class="fa-solid fa-caret-down"></i> Show Less';
 }
 
 function generateProjectHTML(project) {
     const contributions = project.contributions
         .map(item => `<b><li>🔸 ${item}</li></b>`)
+        .join("");
+
+    const screenshots = project.screenshots
+        .map(item => `<div class="gallery-item"><img src="${item}" /></div>`)
         .join("");
 
     return `
@@ -98,36 +118,28 @@ function generateProjectHTML(project) {
           <span class="project-status">${project.status}</span>
           <p class="project-description">${project.description}</p>
           <ul class="project-details">${contributions}</ul>
-          <a href="${project.link}" class="project-button" target="_blank">▶️ Play on Itch.io</a>
-          <button class="media-toggle" onclick="toggleVideo(this)">▶ Show More</button>
+          <a href="${project.link}" class="project-button" target="_blank"><i class="fa-brands fa-itch-io"></i> Play on itch.io</a>
+          <a href="javascript:void(0)" class="media-toggle" onclick="toggleVideo(this)"><i class="fa-solid fa-caret-right"></i> Show More</a>
+
         </div>
         <div class="project-extra">
-            
             <div class="gallery-scroll">
               <div class="gallery-item">
-                <iframe
-                  src="https://www.youtube.com/embed/${project.videoId}"
-                  frameborder="0"
-                  allowfullscreen
-                ></iframe>
+                <iframe src="https://www.youtube.com/embed/${project.videoId}" frameborder="0" allowfullscreen></iframe>
               </div>
-
-              <div class="gallery-item"><img src="${project.image}" /></div>
-              <div class="gallery-item"><img src="${project.image}" /></div>
-              <div class="gallery-item"><img src="${project.image}" /></div>
-              <div class="gallery-item"><img src="${project.image}" /></div>
+              ${screenshots}
             </div>
         </div>
     </div>
     `;
 }
-/**/
+
 const container = document.getElementById("projects-container");
 projects.forEach(project => {
     container.innerHTML += generateProjectHTML(project);
 });
 
-const container2 = document.getElementById("projects-container2");
-prototypes.forEach(prototype => {
-    container.innerHTML += generateProjectHTML(prototype);
-});
+//const container2 = document.getElementById("projects-container2");
+//prototypes.forEach(prototype => {
+//    container.innerHTML += generateProjectHTML(prototype);
+//});

@@ -10,6 +10,7 @@ body {
     width: 100vw;
     height: 100vh;
     padding: 0;
+    min-height: 800px;
     /*background: radial-gradient(circle farthest-corner at 0% 0%, #FFFF, #f3e50000 15%);*/
 }
 
@@ -75,6 +76,17 @@ footer {
     flex-direction: column;
     gap: 15px;
     font-size: 1.2rem;
+}
+
+.readability-box {
+    font-size: 1.2rem;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+
+    line-height: 35px;
+    padding: 20px 30px 20px 30px;
+    background-color: #FFFFFF;
+    border-radius: 32px;
 }
 
 /*mobile overrides*/

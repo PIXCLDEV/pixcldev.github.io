@@ -23,16 +23,16 @@
     transition: all 0.07s ease-in-out;
 }
 
-    /* Hover Effect */
-    .icon:hover {
-        box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.1);
-        transform: scale(0.98);
-    }
+/* Hover Effect */
+.icon:hover {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.4), inset -2px -2px 5px rgba(255, 255, 255, 0.1);
+    transform: scale(0.98);
+}
 
-    /* Icon Styling */
-    .icon i {
-        pointer-events: none;
-    }
+/* Icon Styling */
+.icon i {
+    pointer-events: none;
+}
 
 .ripple {
     position: absolute;

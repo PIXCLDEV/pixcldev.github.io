@@ -17,25 +17,19 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 2rem;
-    /*    background: #f39c12;*/
-    /*background: #f3e500;*/
     background: #fff;
-    /*border: 3px solid black;*/
-    border-radius: 10px;
+    border-radius: 16px;
     padding: 1rem;
     margin-bottom: 2rem;
-    box-shadow: 2px 2px 5px #000;
-
+    padding-right: 1.3rem;
 }
 
 .project-thumb {
     width: 400px;
-
     height: 300px;
     object-fit: cover;
     /*border: 1px solid #000;*/
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px #000;
+    border-radius: 16px;
     margin: 0 auto;
 }
 
@@ -50,7 +44,6 @@
     top: -10px;
     left: 0px;
     font-size: 0.9rem;
-
 }
 
 .project-content h3 {
@@ -76,28 +69,29 @@
 .project-button,
 .media-toggle {
     display: inline-block;
-    background: black;
-    color: yellow;
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    border: 2px solid black;
-    box-shadow: 2px 2px 0 #000;
-    margin-right: 0.5rem;
-    margin-top: 0.5rem;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-family: 'Fira Code', Courier, monospace;
 }
 
-.project-button:hover,
+.project-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
 .media-toggle:hover {
-    background: yellow;
-    color: black;
+    background-color: #0056b3;
 }
-
 
 .project-extra {
-
     overflow: hidden;
     max-height: 0px;
     transition: max-height 0.5s ease, opacity 0.3s ease;
@@ -106,10 +100,9 @@
 }
 
 .project-extra.open {
-    max-height: 500px; /* adjust based on your content */
+    max-height: 500px;
     opacity: 1;
 }
-
 
 /* Alternate left/right */
 /*.project-card:nth-child(even) {
@@ -142,14 +135,12 @@
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-/* Image sizing */
 .gallery-item img {
     height: 280px;
     width: auto;
     display: block;
 }
 
-/* iframe styling to match image size */
 .gallery-item iframe {
     height: 280px;
     width: 420px;
